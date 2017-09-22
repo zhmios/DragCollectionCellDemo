@@ -1,0 +1,11 @@
+platform:ios,'8.0'
+
+target 'CollectionViewDemo' do
+
+pod 'Reveal-SDK', :configurations => ['Debug']
+
+end
+
+
+
+
