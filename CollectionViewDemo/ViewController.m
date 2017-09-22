@@ -19,10 +19,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
     self.collectionView.curController = self;
+    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(addWaterMark:) name:@"DragCollectionViewAddSticker" object:nil];
     
 }
+
+- (void)addWaterMark:(NSNotification *)not{
+    NSValue *frameValue = not.object;
+    CGRect frame = [frameValue CGRectValue];
+    UIView *view = [[UIView alloc]initWithFrame:frame];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"1"]];
+    imageView.frame = CGRectMake(0, 0, 60, 60);
+    imageView.center = view.center;
+    [self.view addSubview:imageView];
+//    imageView.alpha = 0;
+//    [UIView animateWithDuration:0.26 animations:^{
+//        imageView.alpha = 1;
+//    }completion:^(BOOL finished) {
+//
+//    }];
+//    
+    
+}
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
     
     

@@ -45,11 +45,11 @@
        __block CGPoint curPoint = [self convertPoint:cell.center toView:self.curController.view];
         
         _cellImageView.center = curPoint;
-        _cellImageView.alpha = 0.0;
+//        _cellImageView.alpha = 0.0;
         [UIView animateWithDuration:0.25 animations:^{
             _cellImageView.center = curPoint;
             _cellImageView.transform = CGAffineTransformMakeScale(1.15, 1.15);
-            _cellImageView.alpha = 0.9;
+//            _cellImageView.alpha = 0.9;
            
         } completion:^(BOOL finished) {
            
@@ -62,16 +62,21 @@
         CGPoint curPoint = [self convertPoint:point toView:self.curController.view];
         center = curPoint;
         self.cellImageView.center = center;
-        BOOL isMutul = CGRectIntersectsRect(self.frame,_cellImageView.frame);
-        NSLog(@"判断是否有重叠:%d",isMutul);
+        
 
     } else if (sender.state == UIGestureRecognizerStateEnded) {
 
-      
+      BOOL isMutul = CGRectIntersectsRect(self.frame,_cellImageView.frame);
+        if (isMutul == NO) {
+            NSValue *frameValue = [NSValue valueWithCGRect:_cellImageView.frame];
+//            CGRect frame = [frameValue CGRectValue];
+            [[NSNotificationCenter defaultCenter]postNotificationName:@"DragCollectionViewAddSticker" object:frameValue];
+            
+        }
         
         [UIView animateWithDuration:0.25 animations:^{
 
-            _cellImageView.alpha = 0;
+            _cellImageView.transform = CGAffineTransformIdentity;
 
         } completion:^(BOOL finished) {
             [self.cellImageView removeFromSuperview];
