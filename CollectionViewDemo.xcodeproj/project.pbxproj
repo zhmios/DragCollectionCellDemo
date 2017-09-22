@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		162B94652FA4C879544D30DB /* libPods-CollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BEC2324ED7C474BD9F38E /* libPods-CollectionViewDemo.a */; };
+		6B6ABD761F74E9340075D42C /* DragCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6ABD751F74E9340075D42C /* DragCollectionView.m */; };
 		6B87F9AB1F74DAC30081777D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9AA1F74DAC30081777D /* AppDelegate.m */; };
 		6B87F9AE1F74DAC30081777D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9AD1F74DAC30081777D /* ViewController.m */; };
 		6B87F9B11F74DAC30081777D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B87F9AF1F74DAC30081777D /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		6B87F9B91F74DAC30081777D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9B81F74DAC30081777D /* main.m */; };
 		6B87F9C31F74DAC30081777D /* CollectionViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9C21F74DAC30081777D /* CollectionViewDemoTests.m */; };
 		6B87F9CE1F74DAC30081777D /* CollectionViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9CD1F74DAC30081777D /* CollectionViewDemoUITests.m */; };
+		6BF4137E1F74E53A00DD24ED /* DragCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BF4137D1F74E53A00DD24ED /* DragCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		0C1526FC85C1C7FEE332349A /* Pods-CollectionViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo/Pods-CollectionViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		409BEC2324ED7C474BD9F38E /* libPods-CollectionViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CollectionViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B6ABD741F74E9340075D42C /* DragCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragCollectionView.h; sourceTree = "<group>"; };
+		6B6ABD751F74E9340075D42C /* DragCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCollectionView.m; sourceTree = "<group>"; };
 		6B87F9A61F74DAC30081777D /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B87F9A91F74DAC30081777D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B87F9AA1F74DAC30081777D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		6B87F9C91F74DAC30081777D /* CollectionViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollectionViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B87F9CD1F74DAC30081777D /* CollectionViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewDemoUITests.m; sourceTree = "<group>"; };
 		6B87F9CF1F74DAC30081777D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BF4137C1F74E53A00DD24ED /* DragCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragCollectionViewCell.h; sourceTree = "<group>"; };
+		6BF4137D1F74E53A00DD24ED /* DragCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCollectionViewCell.m; sourceTree = "<group>"; };
 		9B358F53DDE1D44D1E623B55 /* Pods-CollectionViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CollectionViewDemo/Pods-CollectionViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +127,10 @@
 				6B87F9AA1F74DAC30081777D /* AppDelegate.m */,
 				6B87F9AC1F74DAC30081777D /* ViewController.h */,
 				6B87F9AD1F74DAC30081777D /* ViewController.m */,
+				6B6ABD741F74E9340075D42C /* DragCollectionView.h */,
+				6B6ABD751F74E9340075D42C /* DragCollectionView.m */,
+				6BF4137C1F74E53A00DD24ED /* DragCollectionViewCell.h */,
+				6BF4137D1F74E53A00DD24ED /* DragCollectionViewCell.m */,
 				6B87F9AF1F74DAC30081777D /* Main.storyboard */,
 				6B87F9B21F74DAC30081777D /* Assets.xcassets */,
 				6B87F9B41F74DAC30081777D /* LaunchScreen.storyboard */,
@@ -346,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BF4137E1F74E53A00DD24ED /* DragCollectionViewCell.m in Sources */,
 				6B87F9AE1F74DAC30081777D /* ViewController.m in Sources */,
 				6B87F9B91F74DAC30081777D /* main.m in Sources */,
+				6B6ABD761F74E9340075D42C /* DragCollectionView.m in Sources */,
 				6B87F9AB1F74DAC30081777D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

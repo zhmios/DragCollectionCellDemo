@@ -7,17 +7,33 @@
 //
 
 #import "ViewController.h"
+#import "DragCollectionViewCell.h"
+#import "DragCollectionView.h"
+@interface ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@property (weak, nonatomic) IBOutlet DragCollectionView *collectionView;
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIView *drawView;
-
+@property(nonatomic,strong)UILongPressGestureRecognizer *longPress;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+  
+    self.collectionView.curController = self;
+    
+}
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
+    
+    
+    return 10;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    DragCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DragCollectionViewCell" forIndexPath:indexPath];
+    return cell;
+    
 }
 
 
