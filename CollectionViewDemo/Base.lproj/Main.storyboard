@@ -17,9 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgc-Fg-nqA" customClass="DrawView">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LXS-tj-Qey" customClass="DragCollectionView">
                                 <rect key="frame" x="285" y="167" width="90" height="500"/>
-                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="JaD-Re-UJe"/>
                                     <constraint firstAttribute="width" constant="90" id="OrN-QJ-9L4"/>
@@ -74,16 +78,30 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="v4S-Mf-mYl"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MhL-c2-aj5">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I7c-dS-qgJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="fgc-Fg-nqA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HKl-OF-uwR"/>
+                            <constraint firstItem="fgc-Fg-nqA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Uhf-Nx-sIK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LXS-tj-Qey" secondAttribute="bottom" id="Yhs-n7-JjU"/>
+                            <constraint firstItem="MhL-c2-aj5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ejz-5R-Gkv"/>
                             <constraint firstItem="LXS-tj-Qey" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hjp-2c-uaM"/>
+                            <constraint firstItem="MhL-c2-aj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="i4s-E6-omC"/>
+                            <constraint firstItem="fgc-Fg-nqA" firstAttribute="top" secondItem="MhL-c2-aj5" secondAttribute="bottom" id="qiy-pP-7cN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fgc-Fg-nqA" secondAttribute="bottom" id="v6B-Vm-7dO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="LXS-tj-Qey" id="gL6-ke-ZNi"/>
+                        <outlet property="drawView" destination="fgc-Fg-nqA" id="YfY-ux-xhu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

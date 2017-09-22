@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		162B94652FA4C879544D30DB /* libPods-CollectionViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 409BEC2324ED7C474BD9F38E /* libPods-CollectionViewDemo.a */; };
 		6B6ABD761F74E9340075D42C /* DragCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6ABD751F74E9340075D42C /* DragCollectionView.m */; };
+		6B6ABD791F74FD7A0075D42C /* DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B6ABD781F74FD7A0075D42C /* DrawView.m */; };
 		6B87F9AB1F74DAC30081777D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9AA1F74DAC30081777D /* AppDelegate.m */; };
 		6B87F9AE1F74DAC30081777D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B87F9AD1F74DAC30081777D /* ViewController.m */; };
 		6B87F9B11F74DAC30081777D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B87F9AF1F74DAC30081777D /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 		409BEC2324ED7C474BD9F38E /* libPods-CollectionViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CollectionViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6ABD741F74E9340075D42C /* DragCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragCollectionView.h; sourceTree = "<group>"; };
 		6B6ABD751F74E9340075D42C /* DragCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCollectionView.m; sourceTree = "<group>"; };
+		6B6ABD771F74FD7A0075D42C /* DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawView.h; sourceTree = "<group>"; };
+		6B6ABD781F74FD7A0075D42C /* DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawView.m; sourceTree = "<group>"; };
 		6B87F9A61F74DAC30081777D /* CollectionViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B87F9A91F74DAC30081777D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6B87F9AA1F74DAC30081777D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -127,6 +130,8 @@
 				6B87F9AA1F74DAC30081777D /* AppDelegate.m */,
 				6B87F9AC1F74DAC30081777D /* ViewController.h */,
 				6B87F9AD1F74DAC30081777D /* ViewController.m */,
+				6B6ABD771F74FD7A0075D42C /* DrawView.h */,
+				6B6ABD781F74FD7A0075D42C /* DrawView.m */,
 				6B6ABD741F74E9340075D42C /* DragCollectionView.h */,
 				6B6ABD751F74E9340075D42C /* DragCollectionView.m */,
 				6BF4137C1F74E53A00DD24ED /* DragCollectionViewCell.h */,
@@ -358,6 +363,7 @@
 			files = (
 				6BF4137E1F74E53A00DD24ED /* DragCollectionViewCell.m in Sources */,
 				6B87F9AE1F74DAC30081777D /* ViewController.m in Sources */,
+				6B6ABD791F74FD7A0075D42C /* DrawView.m in Sources */,
 				6B87F9B91F74DAC30081777D /* main.m in Sources */,
 				6B6ABD761F74E9340075D42C /* DragCollectionView.m in Sources */,
 				6B87F9AB1F74DAC30081777D /* AppDelegate.m in Sources */,
